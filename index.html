@@ -8,16 +8,25 @@
     <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- SWIPER-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">< <span style="font-weight: 700;">GUS</span><span>DEV</span> ></a>
-        <ul>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="menu-btn-burger"></div>
+        </div>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
             <li><a href="#">Portafolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -28,10 +37,139 @@
         <a type="button" class="banner-button mt-2">Let's Start</a>
     </section>
 
-    
-    
-    
+    <div class="container">
 
+        <section class="scroll-container scroll-element js-scroll fade-in-bottom">
+            <div class="row pt-5 justify-content-center">
+                <div class="col-10 col-sm-8">
+                    <div class="banner-text">ABOUT ME<span class="blink">_</span></div>
+                    <p class="pt-4 pb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="title-2">What I do?</div>
+                    <div class="d-flex align-items-center pb-2"><i class="fas fa-check fa-2x"></i><p>List One</p></div>
+                    <div class="d-flex align-items-center pb-2"><i class="fas fa-check fa-2x"></i><p>List One</p></div>
+                    <div class="d-flex align-items-center"><i class="fas fa-check fa-2x"></i><p>List One</p></div>
+                </div>
+                <div class="col-10 col-sm-4">
+                    <div class="datos d-flex flex-column">
+                        <img src="/img/profile.jpg" alt="profile image"  class="profile-img">
+                        <p class="pb-3"><strong>Name: </strong>Gustavo Alberto</p>
+                        <p class="pb-3"><strong>City: </strong>Mexico</p>
+                        <p class="pb-5"><strong>Hobbies: </strong>Drawing</p>
+                        <div class="d-flex justify-content-center">
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-facebook fa-2x"></i>
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="pb-5 banner-text">PROGRESS<span class="blink">_</span></div>
+
+            <div class="wrapper scroll-container scroll-element js-scroll fade-in-bottom">
+    
+                <div class="card html">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div><img src="/img/html.svg"></div>
+                </div>
+    
+                <div class="card css">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div><img src="/img/css.svg"></div>
+                </div>
+    
+                <div class="card bootstrap">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div><img src="/img/boots.svg"></div>
+                </div>
+    
+                <div class="card js">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                    </div>
+                    <div><img src="/img/js.svg"></div>
+                </div>
+    
+            </div>
+            
+        </section>
+    </div>
+
+        <section class="scroll-container scroll-element js-scroll fade-in-bottom">
+          
+            <div class="pb-5 banner-text">PORTAFOLIO<span class="blink">_</span></div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/img/lap.png">
+                    <div class="d-flex justify-content-around">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/lap2.png">
+                    <div class="d-flex justify-content-around">
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/img/lap.png">
+                    <div class="d-flex justify-content-around">
+                        </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+
+        </section>
+
+        <footer class="text-center text-white">
+            <div class="pb-5 banner-text text-center">CONTACT<span class="blink">_</span></div>
+            <div class="container pt-4">
+              <div class="mb-4">
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+        
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>
+                  </div>
+            </div>
+          </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
